@@ -28,10 +28,9 @@ class Block{
         
         const timestamp = Date.now(); // Zeit im ms seit 01.01.1970 | UNIX
         const lastHash  = lastBlock.hash; // HASH-Wert des Vorgängers
-        // const hash      = "Hash to do: data";  // 1. iteration: Fake
-        //const hash      = Block.hash(timestamp,lastHash,blockData); // 2. iteration: SHA256
+        // const hash      = "Hash to do: data";  // 1. Iteration: Fake
+        // const hash      = Block.hash(timestamp,lastHash,blockData); // 2. Iteration: SHA256
         const hash      = Block.leadingZeroHash(timestamp,lastHash,blockData); // 3. Iteration
-
         return new this(timestamp, lastHash, hash, blockData); // call constructor
 
     }
@@ -58,7 +57,8 @@ class Block{
         let endTime = Date.now();
         
         let message =    
-        `Anzahl der Durchläufe: ${tmpNonce}
+        `--- Proof of Work ---
+        Anzahl der Durchläufe: ${tmpNonce}
         Hashwert:  ${tmpHash}
         Berechnungen pro ms: ${tmpNonce/(endTime-startTime)}`
         // console.log(message);
@@ -70,11 +70,6 @@ class Block{
     static hash(timestamp,lastHash,data){
         return SHA256(`${timestamp}${lastHash}${data}`).toString();
     }
-
-
-
-
-
 
 
 }

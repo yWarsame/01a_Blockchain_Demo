@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yWarsame/01a_Blockchain_Demo.git"
+    "url": "git+https://github.com/04-ComCave-SYSII/01a_Blockchain_Demo.git"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/yWarsame/01a_Blockchain_Demo#readme",
   "devDependencies": {
+    "jest": "^30.3.0",
     "nodemon": "^3.1.14"
   },
   "dependencies": {
-    "crypto-js": "^4.2.0"
+    "crypto-js": "^4.2.0",
+    "glob": "^13.0.6",
+    "lru-cache": "^11.2.7"
   }
 }

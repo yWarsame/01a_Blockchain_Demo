@@ -1,5 +1,6 @@
 // call: npm run dev-test
 
+/* Importe */
 const Block = require("./block");
 const Blockchain = require("./blockchain");
 
@@ -17,11 +18,10 @@ const chain = new Blockchain();
 console.log(chain);
 
 chain.addBlock("daten von Block 1");
-console.log(chain);
+// console.log(chain);
 
 chain.addBlock("daten von Block 2");
 chain.addBlock("daten von Block 3");
 chain.addBlock("daten von Block 4");
 
 console.log(chain);
-
