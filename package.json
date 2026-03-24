@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-test": "nodemon dev-test"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yWarsame/01a_Blockchain_Demo.git"
@@ -22,5 +21,8 @@
   "homepage": "https://github.com/yWarsame/01a_Blockchain_Demo#readme",
   "devDependencies": {
     "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
   }
 }
